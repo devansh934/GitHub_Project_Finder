@@ -46,7 +46,9 @@ GitHub Project Finder is a React-based web app built to interact with the GitHub
 
 Here’s what the application looks like:
 
-![GitHub Project Finder Screenshot](demo-screenshot.png)
+
+![Screenshot (314)](https://github.com/user-attachments/assets/b8b8fa3e-17e6-4b6a-96b0-da004e465db0)
+![Screenshot (315)](https://github.com/user-attachments/assets/3d4d8ac0-6bbe-418e-b2b4-2515ba002efd)
 
 > 📌 Replace `demo-screenshot.png` with your actual screenshot file.
 
@@ -75,7 +77,7 @@ npm -v
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+[git clone https://github.com/devansh934/GitHub_Project_Finder.git]
 cd <project-directory>
 ```
 
