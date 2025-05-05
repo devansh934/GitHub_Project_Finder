@@ -1,0 +1,198 @@
+/* src/App.css */
+body {
+  font-family: 'Open Sans', sans-serif; /* A clean, readable font */
+  margin: 0;
+  background-color: #e3f2fd; /* Very light blue background */
+  color: #37474f; /* Dark grayish-blue text */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: #fff; /* Clean white container */
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 750px;
+  text-align: center;
+}
+
+.header-section {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #bbdefb; /* Light blue border */
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1e88e5; /* Soft blue heading */
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Search Bar */
+form {
+  display: flex;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #90caf9; /* Slightly darker blue border */
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 16px 20px;
+  border: none;
+  font-size: 1.1em;
+  outline: none;
+  color: #37474f;
+  font-weight: 400;
+}
+
+button {
+  background-color: #ffb300; /* Muted yellow/gold button */
+  color: #212121; /* Dark text on light button */
+  padding: 16px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+  background-color: #f57f17; /* Slightly darker gold */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Results */
+.search-results {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #fff; /* White background for results */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1e88e5;
+  margin-top: 30px;
+  border-bottom: 1px solid #90caf9; /* Light blue border */
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.repository-item {
+  background-color: #f9fbe7; /* Very light yellow/beige */
+  border: 1px solid #fff9c4; /* Light yellow border */
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 25px;
+  align-items: center;
+}
+
+.repository-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.repository-item h3 a {
+  text-decoration: none;
+  color: #1976d2; /* Slightly darker blue links */
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+}
+
+.repository-item p {
+  color: #546e7a; /* Blue-gray text */
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repo-details {
+  color: #78909c; /* Steel blue */
+  font-size: 0.85em;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.repo-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Icons (Unicode example - adjusted for this theme) */
+.repo-details span:nth-child(1)::before { content: '⭐'; margin-right: 3px; color: #ffca28; } /* Amber star */
+.repo-details span:nth-child(2)::before { content: '🍴'; margin-right: 3px; color: #64b5f6; } /* Light blue fork */
+.repo-details span:nth-child(3)::before { content: '🌐'; margin-right: 3px; color: #4db6ac; } /* Teal globe */
+
+/* Scratch Visualizer */
+.visualizations {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #fff; /* White background for visualizations */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.scratch-visualizer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.scratch-item {
+  background-color: #e1f5fe; /* Very light blue */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #b3e5fc; /* Light blue border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.scratch-item h3 {
+  font-size: 1.15em;
+  color: #1e88e5;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.scratch-visualizer {
+  background-color: #ffe082; /* Light yellow/gold visualizer */
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.scratch-block {
+  background-color: #1e88e5; /* Soft blue block */
+  color: #fff;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: left;
+  width: 100%;
+}
